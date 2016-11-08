@@ -1,0 +1,229 @@
+/* =======================================
+    style.css
+    use this file for your custom styles
+========================================== */
+
+/* use a box model that makes sense */
+*, *:before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* set the default color, font-size, and line height */
+html {
+  color: #333;
+  font-size: 1em;
+  line-height: 1.4;
+}
+
+h4 {
+  text-align: center;
+}
+
+p {
+  text-align: justify;
+  margin-right: 30px;
+  font-family: 'Nunito', 'Avenir', 'Helvetica';
+
+}
+
+.li {
+  display: inline-block;
+}
+
+.logo {
+  margin: auto;
+  width: 25%;
+  padding-top: 20px;
+  padding-bottom: 0px;
+}
+
+.img {
+  margin: auto;
+  padding-top: 5px;
+}
+
+.about {
+  padding-left: 30px;
+}
+
+.columnfull {
+  text-align: center;
+  text-align: center;
+}
+
+.columnhalf {
+  margin: auto;
+}
+
+.social {
+  text-align: center;
+}
+
+.social > ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.social > ul > li{
+  display: inline-block;
+  padding: 20px;
+  cursor: pointer;
+}
+
+
+.title {
+  font-size: 8px;
+  margin: auto;
+}
+
+.nav {
+  margin-bottom: 10px;
+}
+
+body {
+  background: #FFFFFF;
+  font-family: 'Nunito', 'Avenir', 'Helvetica';
+  color: #686466;
+  text-align: center;
+  text-align: justify;
+}
+
+
+
+.wrap {
+  margin: 0 auto;
+  max-width: 900px; /* change this width to make a wider page!*/
+  padding: 0 1em; /* 1em of padding on the left and right side */
+}
+
+/* make images and embedded media fluid */
+img,
+object {
+  max-width: 100%;
+
+}
+
+/* type hierarchy- change for your project */
+h1 {
+  font-size: 3em; /* 48px */
+}
+
+h2 {
+  font-size: 2.25em /* 36px */
+}
+
+h3 {
+  font-size: 1.75em /* 28px */
+}
+
+h4 {
+  font-size: 1.125em /*18px */
+}
+
+/* navigation list styles */
+.navigation {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+
+}
+
+.row {
+  text-align: center;
+}
+
+p {
+  padding-bottom: 10px;
+}
+
+.follow {
+  text-align: center;
+}
+
+nav li {
+  display: inline-block;
+
+  text-align: center;
+  padding: 10px;
+  background-color: #ffffff;
+  font-weight: bold;
+  color: #686466;
+  margin-bottom: 20px;
+  border-width: medium;
+}
+
+nav a:visited {
+    color: #FBC5D8;
+  }
+
+nav a:hover {
+  color: #686466;
+  text-decoration: underline;
+}
+
+
+
+nav a:link {
+  text-decoration: none;
+  color: #686466;
+
+}
+
+.tile {
+  cursor: pointer;
+}
+
+/* =======================================
+    Layout
+    keep this at the bottom
+========================================== */
+
+@media (min-width: 620px) {
+  .column {
+    float: left;
+    padding: 1em;
+  }
+
+  .column.full {
+    width: 100%;
+  }
+
+  .column.two-thirds {
+    width: 66.7%;
+  }
+
+  .column.half {
+    width: 50%;
+  }
+
+  .column.third {
+    width: 33.3%;
+  }
+
+  .column.fourth {
+    width: 25%;
+  }
+
+  .column.flow-opposite {
+    float: right;
+  }
+}
+
+
+/* row used as a clearfix to clear floats */
+.row:before,
+.row:after {
+  content: " ";
+  display: table;
+}
+
+.row:after {
+  clear: both;
+}
+
+.row {
+  *zoom: 1;
+}
